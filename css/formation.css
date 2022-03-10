@@ -1,0 +1,158 @@
+.formation {
+  background-color: #131313;
+  color: white;
+}
+
+.formation-container {
+  max-width: 1440px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+}
+
+.formation .subtitulo {
+  color: #2d2d2d;
+}
+
+.formation-texto {
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  max-width: 45ch;
+  color: #c6c6c6;
+}
+
+.curso {
+  display: block;
+  background: #131313;
+  border: 2px solid #c6c6c6;
+  border-radius: 34px;
+  gap: 20px;
+  padding: 20px 40px 40px;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+.curso-tipo {
+  font-weight: 800;
+  font-size: 1.12rem;
+  line-height: 1.25px;
+  color: #696969;
+}
+
+.curso-nome {
+  font-weight: 800;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  color: #ffffff;
+  padding: 20px 0 40px;
+  position: relative;
+}
+
+.curso-nome::before {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 17px;
+  background: linear-gradient(#f7d212, #f4b104);
+  position: absolute;
+  top: 25px;
+  left: -75px;
+}
+
+.curso-local {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.25px;
+  padding: 20px 0 40px;
+  color: #696969;
+}
+.formation-itens {
+  margin-left: 160px;
+}
+
+.cursos-extra h3 {
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.25px;
+  color: #b7b7b7;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.cursos-extra h3::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: -34px;
+  top: -10px;
+}
+
+.cursos-extra-lista h3::before {
+  background: url(../img/icon-livro.svg) no-repeat center center;
+}
+
+.idiomas h3::before {
+  background: url(../img/icon-idioma.svg) no-repeat center center;
+}
+
+.cursos-extra li {
+  padding: 10px 0 10px;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  color: #ffffff;
+}
+
+.cursos-extra-horas {
+  font-size: 1.5rem;
+  color: #b7b7b7;
+}
+
+.idiomas-fluencia {
+  font-size: 1.15rem;
+  color: #b7b7b7;
+  margin-left: 30px;
+}
+
+.cursos-extra-lista li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 850px) {
+  .formation-container {
+    grid-template-columns: 1fr;
+  }
+  .formation .subtitulo {
+    color: #ffffff;
+    font-size: 3rem;
+    padding: 0 10px;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+  .formation-itens {
+    margin-left: initial;
+    padding: 20px 10px;
+  }
+  .cursos-extra h3::before {
+    position: initial;
+    margin-bottom: 20px;
+  }
+
+  .curso-nome::before {
+    top: -50px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .formation {
+    color: #141414;
+  }
+}
